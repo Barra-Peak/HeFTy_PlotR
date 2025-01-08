@@ -22,6 +22,7 @@ Examples of each input file using data published in Peak et al. (2023) are inclu
 To report bugs or suggest improvements please email Barra at barra.peak@jsg.utexas.edu.
 
 References:
+
 Ketcham, R.A., 2024. Thermal history inversion from thermochronometric data and complementary information: New methods and recommended practices. Chemical Geology 653, 122042. https://doi.org/10.1016/j.chemgeo.2024.122042
 
 Ketcham, R.A., 2005. Forward and Inverse Modeling of Low-Temperature Thermochronometry Data. Reviews in Mineralogy and Geochemistry 58, 275–314. https://doi.org/10.2138/rmg.2005.58.11
