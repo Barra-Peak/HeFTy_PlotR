@@ -3,13 +3,13 @@ Customize HeFTy-generated tT plots for thermochronology interpretation
 
 HeFty_plotR is an R script that plots time-temperature (tT) paths created using the HeFty thermochronologic data modeling software (Ketcham, 2005; 2024). The script can plot paths produced in any version of HeFty but options for plotting tT paths produced using HeFTy v1 are more limited than for paths produced using HeFTy v2.
 
-For models produced in HeFTy v1, paths can be plotted with one of 2 options specified by the user:
+For models produced in HeFTy v1, paths can be plotted with one of two options specified by the user:
 
 plot_type = HeFTy v1: discrete color scale corresponding to the default acceptance criteria used in v1 ("Good" or "Acceptable" paths) based on the minimum goodness of fit of path predictions to individual observed dates.
 
 plot_type = Min.GOF: continuous color scale corresponding to the minimum goodness of fit to individual observed dates for each path (e.g., Peak et al., 2021 Fig. 3). 
 
-For models produced in HeFTy v2, paths can be plotted using the above two options for HeFTy v1 models or the following two additional options:
+For models produced in HeFTy v2, paths can be plotted using the above options for HeFTy v1 models or the following two additional options:
 
 plot_type = HeFTy v2: discrete color scale corresponding to the default acceptance criteria used in v2 based on combined goodness of fit of predictions to all observed dates.
 
@@ -27,7 +27,7 @@ Required Inputs:
 2. An .xlsx or .xls file of the modeled individual or binned thermochronologic dates and uncertainties.
 	- This is read into the script as “data_file.”
  	- This is used to make histogram plots of the predicted vs. observed dates.
-	- IMPORTANT! Dates should match exactly with dates input into and modeled in HeFTy - e.g., if uncorrected dates 	were modeled, the date input file should list uncorrected dates; if corrected dates were modeled, the 	file should list corrected dates. Dates must be listed in the same order they were input into HeFTy.
+	- IMPORTANT! Dates should match exactly with dates input into and modeled in HeFTy - e.g., if uncorrected dates were modeled, the date input file should list uncorrected dates; if corrected dates were modeled, the file should list corrected dates. Dates must be listed in the same order they were input into HeFTy.
 
 Examples of each input file using data published in Peak et al. (2023) are included in this repository. Example tT paths were generated in HeFTy v2. Example script outputs using this data are also included.
 
