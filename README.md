@@ -3,9 +3,21 @@ Customize HeFTy-generated tT plots for thermochronology interpretation
 
 HeFty_plotR is an R script that plots time-temperature (tT) paths created using the HeFty thermochronologic data modeling software (Ketcham, 2005; 2024). The script can plot paths produced in any version of HeFty but options for plotting tT paths produced using HeFTy v1 are more limited than for paths produced using HeFTy v2.
 
-For models produced in HeFTy v1, paths can be plotted using the default discrete acceptance criteria used in v1 based on the minimum goodness of fit of path predictions to individual observed dates or using a continuous color scale corresponding to the minimum goodness of fit to individual observed dates for each path (e.g., Peak et al., 2021 Fig. 3). For models produced in HeFTy v2, paths can be plotted using the default acceptance criteria used in v1, the default discrete acceptance criteria used in v2 based on combined goodness of fit of predictions to all observed dates, or using continuous color scales corresponding to the minimum individual date goodness of fit or combined dates goodness of fit. For information about the acceptance criteria used in each version of HeFTy see Ketcham, 2005 (v1) and Ketcham, 2024 (v2).
+For models produced in HeFTy v1, paths can be plotted with one of 2 options specified by the user:
 
-The script also plots tT path date predictions as frequency distributions compared with the observed dates in a manner similar to McDonnell and Keller (2022). If this option is selected, the script will output two histograms: one lumping all date predictions and one color coded using the same color scheme adopted for depicting prediction goodness of fit in the tT path plot.
+plot_type = HeFTy v1: discrete color scale corresponding to the default acceptance criteria used in v1 ("Good" or "Acceptable" paths) based on the minimum goodness of fit of path predictions to individual observed dates.
+
+plot_type = Min.GOF: continuous color scale corresponding to the minimum goodness of fit to individual observed dates for each path (e.g., Peak et al., 2021 Fig. 3). 
+
+For models produced in HeFTy v2, paths can be plotted using the above two options for HeFTy v1 models or the following two additional options:
+
+plot_type = HeFTy v2: discrete color scale corresponding to the default acceptance criteria used in v2 based on combined goodness of fit of predictions to all observed dates.
+
+plot_type = Com.GOF: continuous color scale corresponding to the combined goodness of fit of all predicted dates to all observed dates. 
+
+For information about the acceptance criteria used in each version of HeFTy see Ketcham, 2005 (v1) and Ketcham, 2024 (v2).
+
+The script can also plot tT path date predictions as frequency distributions compared with the observed dates in a manner similar to McDonnell and Keller (2022). If this option is selected, the script will output two histograms: one lumping all date predictions and one color coded using the same color scheme adopted for depicting prediction goodness of fit in the tT path plot.
 
 Required Inputs:
 
